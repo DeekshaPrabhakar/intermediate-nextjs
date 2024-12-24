@@ -9,7 +9,7 @@ import { memoize } from 'nextjs-better-unstable-cache'
 export const getRsvpsForDashboard = memoize(
   async (userId: string) => {
     await delay()
-    throw new Error('Not implemented')
+    // throw new Error('Not implemented')
 
     const userEvents = await db.query.events.findMany({
       where: eq(events.createdById, userId),
